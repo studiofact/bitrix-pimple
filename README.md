@@ -21,15 +21,26 @@
 require_once $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 ```
 
+## Пример использования
+
+``` php
+use Pimple\Container;
+use Citfact\Pimple\Provider;
+
+$container = new Container();
+$container->register(new Provider\CatalogProvider());
+$container->register(new Provider\IBlockProvider());
+```
+
 ## Провайдеры
 
-### `AdvertisingProvider`
+### AdvertisingProvider
 
 - `bx.advertising.banner` - `CAdvBanner`
 - `bx.advertising.contract` - `CAdvContract`
 - `bx.advertising.type` - `CAdvType`
 
-### `BlogProvider`
+### BlogProvider
 
 - `bx.blog` - `CBlog`
 - `bx.blog.candidate` - `CBlogCandidate`
@@ -42,7 +53,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 - `bx.blog.user` - `CBlogUser`
 - `bx.blog.user_group` - `CBlogUserGroup`
 
-### `CatalogProvider`
+### CatalogProvider
 
 - `bx.catalog` - `CCatalog`
 - `bx.catalog.discount` - `CCatalogDiscount`
@@ -60,13 +71,13 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 - `bx.catalog.extra` - `CExtra`
 - `bx.catalog.price` - `CPrice`
 
-### `CurrencyProvider`
+### CurrencyProvider
 
 - `bx.currency` - `CCurrency`
 - `bx.currency.lang` - `CCurrencyLang`
 - `bx.currency.rates` - `CCurrencyRates`
 
-### `IBlockProvider`
+### IBlockProvider
 
 - `bx.iblock` - `CIBlock`
 - `bx.iblock.cml_export` - `CIBlockCMLExport`
@@ -82,7 +93,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 - `bx.iblock.type` - `CIBlockType`
 - `bx.iblock.xml_file` - `CIBlockXMLFile`
 
-### `LearningProvider`
+### LearningProvider
 
 - `bx.learning.course` - `CCourse`
 - `bx.learning.chapter` - `CChapter`
@@ -98,7 +109,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 - `bx.learning.course_package` - `CCoursePackage`
 - `bx.learning.course_import` - `CCourseImport`
 
-### `MainProvider`
+### MainProvider
 
 - `bx.main` - `CMain`
 - `bx.main.database` - `CDatabase`
@@ -130,7 +141,6 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 - `bx.main.component_template` - `CbxComponentTemplate`
 - `bx.main.ratings` - `CRatings`
 - `bx.main.user_counter` - `CUserCounter`
-- `bx.main.user_counter` - `CUserCounter`
 - `bx.main.sanitizer` - `CBXSanitizer`
 - `bx.main.admin_notify` - `CAdminNotify`
 - `bx.main.virtual_io` - `CBXVirtualIo`
@@ -139,14 +149,14 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 - `bx.main.smile` - `CSmile`
 - `bx.main.smile_set` - `CSmileSet`
 
-### `PullProvider`
+### PullProvider
 
 - `bx.pull.stack` - `CPullStack`
 - `bx.pull.watch` - `CPullWatch`
 - `bx.pull.options` - `CPullOptions`
 - `bx.pull.manager` - `CPushManager`
 
-### `SaleProvider`
+### SaleProvider
 
 - `bx.sale.auxiliary` - `CSaleAuxiliary`
 - `bx.sale.basket` - `CSaleBasket`
@@ -174,14 +184,14 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 - `bx.sale.user_cards` - `CSaleUserCards`
 - `bx.sale.user_transact` - `CSaleUserTransact`
 
-### `SearchProvider`
+### SearchProvider
 
 - `bx.search` - `CSearch`
 - `bx.search.custom_rank` - `CSearchCustomRank`
 - `bx.search.tags` - `CSearchTags`
 - `bx.search.site_map` - `CSiteMap`
 
-### `SocialNetworkProvider`
+### SocialNetworkProvider
 
 - `bx.socialnetwork.user_relations` - `CSocNetUserRelations`
 - `bx.socialnetwork.user_perms` - `CSocNetUserPerms`
@@ -198,7 +208,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 - `bx.socialnetwork.tools` - `CSocNetTools`
 - `bx.socialnetwork.text_parser` - `CSocNetTextParser`
 
-### `StatisticProvider`
+### StatisticProvider
 
 - `bx.statistic` - `CStatistics`
 - `bx.statistic.adv` - `CAdv`
@@ -219,19 +229,19 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 - `bx.statistic.traffic` - `CTraffic`
 - `bx.statistic.user_online` - `CUserOnline`
 
-### `SubscribeProvider`
+### SubscribeProvider
 
 - `bx.subscribe` - `CSubscription`
 - `bx.subscribe.posting` - `CPosting`
 - `bx.subscribe.posting_template` - `CPostingTemplate`
 - `bx.subscribe.rubric` - `CRubric`
 
-### `SupportProvider`
+### SupportProvider
 
 - `bx.support.ticket` - `CTicket`
 - `bx.support.ticket_dictionary` - `CTicketDictionary`
 
-### `WebServiceProvider`
+### WebServiceProvider
 
 - `bx.webservice.xml_creator` - `CXMLCreator`
 - `bx.webservice.soap_fault` - `CSOAPFault`
@@ -244,7 +254,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 - `bx.webservice.soap_response` - `CSOAPResponse`
 - `bx.webservice.wssoap_responser` - `CWSSOAPResponser`
 
-### `WikiProvider`
+### WikiProvider
 
 - `bx.wiki` - `CWiki`
 - `bx.wiki.parser` - `CWikiParser`
