@@ -9,8 +9,7 @@
  * file that was distributed with this source code.
  */
 
-// (bitrix|local)/modules/moduleName/tests
-$_SERVER['DOCUMENT_ROOT'] = __DIR__.'/../../../..';
+$_SERVER['DOCUMENT_ROOT'] = __DIR__.'/../../..';
 
 define('LANG', 'ru');
 define('NO_KEEP_STATISTIC', true);
@@ -19,7 +18,6 @@ define('BX_BUFFER_USED', true);
 define('BX_CLUSTER_GROUP', 2);
 
 require $_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/prolog_before.php';
-require __DIR__.'/../include.php';
 
 $loader = require $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 $loader->addPsr4('Citfact\\Pimple\\', __DIR__.'/Citfact/Pimple');

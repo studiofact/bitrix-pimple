@@ -149,14 +149,6 @@ class MainProvider implements ServiceProviderInterface
             return new \CBXVirtualIo();
         };
 
-        $pimple['bx.main.virtual_file'] = function () {
-            return new \CBXVirtualFile();
-        };
-
-        $pimple['bx.main.virtual_directory'] = function () {
-            return new \CBXVirtualDirectory();
-        };
-
         $pimple['bx.main.smile'] = function () {
             return new \CSmile();
         };

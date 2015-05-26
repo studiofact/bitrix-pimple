@@ -144,8 +144,6 @@ $container->register(new Provider\IBlockProvider());
 - `bx.main.sanitizer` - `CBXSanitizer`
 - `bx.main.admin_notify` - `CAdminNotify`
 - `bx.main.virtual_io` - `CBXVirtualIo`
-- `bx.main.virtual_file` - `CBXVirtualFile`
-- `bx.main.virtual_directory` - `CBXVirtualDirectory`
 - `bx.main.smile` - `CSmile`
 - `bx.main.smile_set` - `CSmileSet`
 
