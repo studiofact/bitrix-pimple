@@ -69,10 +69,6 @@ class MainProvider implements ServiceProviderInterface
             return new \CLanguage();
         };
 
-        $pimple['bx.main.main_page'] = function () {
-            return new \CMainPage();
-        };
-
         $pimple['bx.main.menu'] = function () {
             return new \CMenu();
         };
@@ -90,6 +86,10 @@ class MainProvider implements ServiceProviderInterface
         };
 
         $pimple['bx.main.page_cache'] = function () {
+            return new \CPageCache();
+        };
+
+        $pimple['bx.main.php_cache'] = function () {
             return new \CPHPCache();
         };
 
@@ -111,10 +111,6 @@ class MainProvider implements ServiceProviderInterface
 
         $pimple['bx.main.user_field_enum'] = function () {
             return new \CUserFieldEnum();
-        };
-
-        $pimple['bx.main.admin_page'] = function () {
-            return new \CAdminPage();
         };
 
         $pimple['bx.main.application_exception'] = function () {

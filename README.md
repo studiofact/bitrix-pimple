@@ -123,7 +123,6 @@ $container->register(new Provider\IBlockProvider());
 - `bx.main.group` - `CGroup`
 - `bx.main.site` - `CSite`
 - `bx.main.language` - `CLanguage`
-- `bx.main.main_page` - `CMainPage`
 - `bx.main.menu` - `CMenu`
 - `bx.main.module` - `CModule`
 - `bx.main.option` - `COption`
@@ -135,7 +134,6 @@ $container->register(new Provider\IBlockProvider());
 - `bx.main.disk_quota` - `CDiskQuota`
 - `bx.main.user_type_entity` - `CUserTypeEntity`
 - `bx.main.user_field_enum` - `CUserFieldEnum`
-- `bx.main.admin_page` - `CAdminPage`
 - `bx.main.application_exception` - `CApplicationException`
 - `bx.main.component` - `CBitrixComponent`
 - `bx.main.component_template` - `CBitrixComponentTemplate`
