@@ -137,8 +137,8 @@ $container->register(new Provider\IBlockProvider());
 - `bx.main.user_field_enum` - `CUserFieldEnum`
 - `bx.main.admin_page` - `CAdminPage`
 - `bx.main.application_exception` - `CApplicationException`
-- `bx.main.component` - `CbxComponent`
-- `bx.main.component_template` - `CbxComponentTemplate`
+- `bx.main.component` - `CBitrixComponent`
+- `bx.main.component_template` - `CBitrixComponentTemplate`
 - `bx.main.ratings` - `CRatings`
 - `bx.main.user_counter` - `CUserCounter`
 - `bx.main.sanitizer` - `CBXSanitizer`

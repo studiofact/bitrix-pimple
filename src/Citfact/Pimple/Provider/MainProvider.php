@@ -122,11 +122,11 @@ class MainProvider implements ServiceProviderInterface
         };
 
         $pimple['bx.main.component'] = function () {
-            return new \CbxComponent();
+            return new \CBitrixComponent();
         };
 
         $pimple['bx.main.component_template'] = function () {
-            return new \CbxComponentTemplate();
+            return new \CBitrixComponentTemplate();
         };
 
         $pimple['bx.main.ratings'] = function () {
