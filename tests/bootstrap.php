@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-$_SERVER['DOCUMENT_ROOT'] = __DIR__.'/../../..';
+$_SERVER['DOCUMENT_ROOT'] = __DIR__.'/../../../..';
 
 define('LANG', 'ru');
 define('NO_KEEP_STATISTIC', true);
