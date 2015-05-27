@@ -17,7 +17,7 @@ use Citfact\Pimple\Provider;
 class ProviderTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var Pjax
+     * @var Container
      */
     protected $container = null;
 
@@ -44,6 +44,8 @@ class ProviderTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider getProviderData
+     * @param string $id
+     * @param string $instance
      */
     public function testProvider($id, $instance)
     {
