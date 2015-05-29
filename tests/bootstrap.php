@@ -38,5 +38,5 @@ foreach ($moduleLoaded as $module) {
     CModule::IncludeModule($module);
 }
 
-$loader = require $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
+$loader = require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 $loader->addPsr4('Citfact\\Pimple\\', __DIR__.'/Citfact/Pimple');

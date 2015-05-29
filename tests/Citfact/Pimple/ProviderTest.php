@@ -12,7 +12,6 @@
 namespace Citfact\Pimple;
 
 use Pimple\Container;
-use Citfact\Pimple\Provider;
 
 class ProviderTest extends \PHPUnit_Framework_TestCase
 {
@@ -44,6 +43,7 @@ class ProviderTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider getProviderData
+     *
      * @param string $id
      * @param string $instance
      */
